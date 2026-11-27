@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="University Student Activity Management Portal">
+    <meta name="author" content="University Student">
+
+    <title>Student Registration Form</title>
+
+    <!-- ADD THIS STYLE BLOCK -->
+    <style>
+        body {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <!-- The rest of your existing code stays the same -->
+    <!-- HEADER -->
+    <header>
+        <h1>Student Activity Management Portal</h1>
+        <p>Discover events, explore activities, and participate in campus life.</p>
+
+        <!-- NAVIGATION -->
+        <nav aria-label="Main navigation">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#events">Upcoming Events</a></li>
+                <li><a href="#activities">Activities</a></li>
+                <li><a href="#registration">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main id="home">
+
+        <!-- INTRODUCTION SECTION -->
+        <section aria-labelledby="welcome-heading">
+            <h2 id="welcome-heading">Welcome to Campus Life</h2>
+            <p>
+                Participate in university events, develop your skills,
+                meet new people, and make your campus experience memorable.
+            </p>
+        </section>
+
+        <!-- EVENTS SECTION -->
+        <section id="events" aria-labelledby="events-heading">
+            <h2 id="events-heading">Upcoming Events</h2>
+
+            <article>
+                <h3>Tech Fest 2026</h3>
+                <p>Explore technology, innovation, coding, and creative projects.</p>
+                <p><strong>Date:</strong> December 10, 2026</p>
+            </article>
+
+            <article>
+                <h3>Cultural Fest</h3>
+                <p>Enjoy music, dance, art, and cultural performances.</p>
+                <p><strong>Date:</strong> December 15, 2026</p>
+            </article>
+
+            <article>
+                <h3>Sports Meet</h3>
+                <p>Participate in indoor and outdoor sports activities.</p>
+                <p><strong>Date:</strong> December 20, 2026</p>
+            </article>
+        </section>
+
+        <!-- ACTIVITIES SECTION -->
+        <section id="activities" aria-labelledby="activities-heading">
+            <h2 id="activities-heading">Campus Activities</h2>
+
+            <article>
+                <h3>Technical Clubs</h3>
+                <p>Join coding, robotics, AI, and innovation clubs.</p>
+            </article>
+
+            <article>
+                <h3>Cultural Clubs</h3>
+                <p>Participate in dance, music, drama, and photography.</p>
+            </article>
+
+            <article>
+                <h3>Sports Clubs</h3>
+                <p>Improve teamwork and participate in sports competitions.</p>
+            </article>
+        </section>
+
+        <!-- ASIDE INFORMATION -->
+        <aside aria-labelledby="notice-heading">
+            <h2 id="notice-heading">Important Notice</h2>
+            <p>Register early for events. Some activities have limited seats.</p>
+        </aside>
+
+        <!-- REGISTRATION SECTION -->
+        <section id="registration" aria-labelledby="registration-heading">
+            <h2 id="registration-heading">Student Event Registration</h2>
+
+            <form action="#" method="post">
+
+                <!-- TEXT INPUTS -->
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <label for="student-name">Full Name:</label>
+                    <input type="text" id="student-name" name="student_name"
+                           placeholder="Enter your full name" required>
+                    <br><br>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email"
+                           placeholder="example@university.edu" required>
+                    <br><br>
+
+                    <label for="student-id">Student ID:</label>
+                    <input type="text" id="student-id" name="student_id"
+                           placeholder="Enter your student ID" required>
+                    <br><br>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone"
+                           placeholder="Enter phone number">
+                </fieldset>
+
+                <!-- DROPDOWN -->
+                <fieldset>
+                    <legend>Academic Details</legend>
+
+                    <label for="department">Department:</label>
+                    <select id="department" name="department" required>
+                        <option value="">Select Department</option>
+                        <option value="cse">Computer Science</option>
+                        <option value="ece">Electronics and Communication</option>
+                        <option value="eee">Electrical Engineering</option>
+                        <option value="mech">Mechanical Engineering</option>
+                        <option value="civil">Civil Engineering</option>
+                    </select>
+                    <br><br>
+
+                    <label for="year">Year of Study:</label>
+                    <select id="year" name="year" required>
+                        <option value="">Select Year</option>
+                        <option value="1">First Year</option>
+                        <option value="2">Second Year</option>
+                        <option value="3">Third Year</option>
+                        <option value="4">Fourth Year</option>
+                    </select>
+                </fieldset>
+
+                <!-- RADIO BUTTONS -->
+                <fieldset>
+                    <legend>Event Preference</legend>
+
+                    <p>Select your preferred event category:</p>
+
+                    <input type="radio" id="technical" name="event_category"
+                           value="technical" required>
+                    <label for="technical">Technical</label>
+                    <br>
+
+                    <input type="radio" id="cultural" name="event_category"
+                           value="cultural">
+                    <label for="cultural">Cultural</label>
+                    <br>
+
+                    <input type="radio" id="sports" name="event_category"
+                           value="sports">
+                    <label for="sports">Sports</label>
+                </fieldset>
+
+                <!-- CHECKBOXES -->
+                <fieldset>
+                    <legend>Interests</legend>
+
+                    <p>Select activities you are interested in:</p>
+
+                    <input type="checkbox" id="coding" name="interests"
+                           value="coding">
+                    <label for="coding">Coding</label>
+                    <br>
+
+                    <input type="checkbox" id="music" name="interests"
+                           value="music">
+                    <label for="music">Music</label>
+                    <br>
+
+                    <input type="checkbox" id="dance" name="interests"
+                           value="dance">
+                    <label for="dance">Dance</label>
+                    <br>
+
+                    <input type="checkbox" id="sports-interest" name="interests"
+                           value="sports">
+                    <label for="sports-interest">Sports</label>
+                </fieldset>
+
+                <!-- TEXTAREA -->
+                <fieldset>
+                    <legend>Additional Information</legend>
+
+                    <label for="message">Why do you want to participate?</label>
+                    <br>
+
+                    <textarea id="message" name="message" rows="5" cols="40"
+                              placeholder="Write your message here..."></textarea>
+                </fieldset>
+
+                <!-- SUBMIT AND RESET -->
+                <button type="submit">Register Now</button>
+                <button type="reset">Clear Form</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 University Student Activity Portal</p>
+        <p>Contact: studentactivities@university.edu</p>
+    </footer>
+
+</body>
+</html>  
